@@ -1,0 +1,93 @@
+= Development Guide
+:sectnums:
+:experimental:
+:icons: font
+:toc:
+
+== Prerequisite Software
+The following software are _required_ on developer's workstation:
+
+. Node.js
+. Git
+
+The following software are _recommended_ to be used for development:
+
+. Visual Studio Code (IDE)
+. https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint[ESLint] extension for Visual Studio Code
+. https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode[Prettier - Code formatter] extension for Visual Studio Code
+
+
+== Installing npm modules
+[source]
+----
+npm install
+----
+
+
+== Running the tests
+[source]
+----
+npm run test -- --silent --verbose
+----
+
+
+== Packaging the module
+[source]
+----
+npm pack
+----
+
+This will generate `meta-image-generator-<version>.tgz` in the current working directory.
+
+
+== Applying a license
+. Choose a license using http://oss-watch.ac.uk/apps/licdiff/[Licence differentiator].
+. Use https://choosealicense.com/licenses/[choosealicense.com] to learn how to apply the license.
+. Set the value of `license` field in `package.json` to the https://spdx.org/licenses/[SPDX identifier] of the chosen license.
+
+
+== Resources
+=== ESLint
+- https://eslint.org/docs/user-guide/configuring/language-options#specifying-environments[ESLint docs > Specifying Environments]
+- https://eslint.org/docs/user-guide/configuring/language-options#specifying-parser-options[ESLint docs > Specifying Parser Options]
+
+=== JavaScript Image Manipulation Program
+- https://www.npmjs.com/package/jimp[npmjs.com > Jimp]
+- https://github.com/oliver-moran/jimp/issues/537[GitHub > Jimp > How to add red or purple color text on the image?]
+- https://github.com/oliver-moran/jimp[GitHub >  oliver-moran/jimp ]
+- https://www.npmjs.com/package/jimp[npmjs.com > jimp]
+- https://rossbulat.medium.com/image-processing-in-nodejs-with-jimp-174f39336153[Medium > Image Processing in NodeJS with Jimp]
+- https://blog.logrocket.com/image-processing-with-node-and-jimp/[LogRocket > Image processing with Node and Jimp]
+
+=== Jest
+- https://jestjs.io/docs/timer-mocks[Jest docs > Timer Mocks]
+- https://testing-library.com/docs/using-fake-timers/[Using Fake Timers]
+
+=== Node.js
+- https://docs.npmjs.com/cli/v7/configuring-npm/package-json[npm docs > package.json]
+- https://nodejs.dev/learn/the-package-json-guide[Node.js docs > The package.json guide]
+- https://nodejs.dev/learn/expose-functionality-from-a-nodejs-file-using-exports[Node.js docs > Expose functionality from a Node.js file using exports]
+- https://docs.npmjs.com/cli/v7/commands/npm-pack[npm docs > npm-pack]
+- https://docs.npmjs.com/cli/v7/commands/npm-link[npm docs > npm-link]
+
+=== Yargs
+- https://nodejs.org/en/knowledge/command-line/how-to-parse-command-line-arguments/[How to parse command line arguments]
+- https://github.com/yargs/yargs/blob/master/docs/api.md[Yargs docs > API]
+
+=== iso-datestring-validator
+- https://www.npmjs.com/package/iso-datestring-validator[npmjs.com > iso-datestring-validator]
+
+
+=== Prettier
+- https://prettier.io/docs/en/install.html[Prettier docs > Install]
+- https://www.npmjs.com/package/eslint-config-prettier[npmjs.com > eslint-config-prettier]
+- https://www.npmjs.com/package/eslint-plugin-prettier[npmjs.com > eslint-plugin-prettier]
+- https://github.com/prettier/prettier-vscode[GitHub > Prettier Formatter for Visual Studio Code]
+- https://www.robinwieruch.de/prettier-eslint[robinwieruch.de > How to make Prettier work with ESLint]
+
+=== License
+- http://oss-watch.ac.uk/apps/licdiff/[License differentiator]
+- https://choosealicense.com/[Choose an open source license]
+- https://spdx.org/licenses/[SPDX License List]
+- https://infra.apache.org/licensing-howto.html[Apache Infrastructure > Assembling LICENSE and NOTICE files]
+- https://choosealicense.com/licenses/mit/[choosealicense.com > MIT License]

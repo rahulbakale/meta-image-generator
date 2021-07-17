@@ -1,0 +1,58 @@
+= Meta Image Generator
+:sectnums:
+:experimental:
+:toc:
+
+Generates images that can be used in `<meta>` tags of web pages.
+
+== Installation
+. Clone this repository.
+
+. Create a symlink that links to the package.
++
+[source,bash]
+----
+$ cd meta-image-generator
+
+$ npm link
+----
+
+
+== Usage
+. Generate an image.
++
+[source,bash]
+----
+$ cd meta-image-generator
+
+$ create-meta-image \
+    --title 'Covariance and Contravariance in Generic Programming' \
+    --subtitle 'Tech Blog' \
+    --author 'Rahul Bakale' \
+    --date '2018-09-27' \
+    --graphic 'examples/input-avatar.png' \
+    --output '/tmp/output.png'
+----
+
+This will generate the following image:
+
+[.thumb]
+image::examples/output.png[]
+
+
+== Uninstallation
+. Delete the symlink that links to the package.
++
+[source,bash]
+----
+$ cd meta-image-generator
+
+$ npm unlink
+----
+
+. Delete the repository clone.
+
+
+== Attribution
+`examples/input-avatar.png` image was https://pixabay.com/vectors/avatar-male-boy-character-1606916/[downloaded] from Pixabay.
+At the time this image was downloaded, Pixabay https://pixabay.com/service/license/[license] allowed free usage without attribution.

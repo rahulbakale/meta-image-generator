@@ -1,0 +1,40 @@
+{
+  "name": "meta-image-generator",
+  "version": "1.0.0",
+  "description": "Generates images that can be used in meta tags of web pages.",
+  "keywords": [
+    "metadata",
+    "seo",
+    "images",
+    "documentation",
+    "static site",
+    "web publishing"
+  ],
+  "author": "Rahul Bakale",
+  "license": "MIT",
+  "private": true,
+  "main": "lib/index.js",
+  "bin": {
+    "create-meta-image": "bin/create-meta-image"
+  },
+  "dependencies": {
+    "iso-datestring-validator": "2.1.4",
+    "jimp": "0.16.1",
+    "yargs": "17.0.1"
+  },
+  "devDependencies": {
+    "eslint": "~7.26",
+    "prettier": "~2.3",
+    "eslint-config-prettier": "~8.3",
+    "eslint-plugin-prettier": "~3.4",
+    "jest": "~27.0",
+    "rewire": "~5.0"
+  },
+  "files": [
+    "bin/",
+    "lib/"
+  ],
+  "scripts": {
+    "test": "jest"
+  }
+}
